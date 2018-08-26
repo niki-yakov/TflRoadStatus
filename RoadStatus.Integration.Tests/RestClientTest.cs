@@ -19,6 +19,7 @@ namespace RoadStatus.Integration.Tests
         {
             RestClient = RoadStatusContainer.Container.Resolve<IRestClient>();
         }
+
         [Fact]
         public void When_Execute_Request_With_Correct_Road_Then_Returns_Json()
         {

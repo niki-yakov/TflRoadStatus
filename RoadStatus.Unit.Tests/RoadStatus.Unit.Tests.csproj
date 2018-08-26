@@ -75,6 +75,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrintTest.cs" />
+    <Compile Include="RoadStatusContainer.cs" />
     <Compile Include="RoadStatusValidatorTest.cs" />
     <Compile Include="WebClientTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -22,7 +22,6 @@ namespace RoadStatus.Unit.Tests
             ConfigMock = new Mock<IConfig>();
             Client = new HttpClient(new DelegatingHandlerStub());
             RestClient = new RestClient(ConfigMock.Object, Client);
-
         }
 
         [Fact]
@@ -46,6 +45,7 @@ namespace RoadStatus.Unit.Tests
         public void When_Execute_Request_With_Wrong_Url()
         {
             this.Road = "A2";
+
             SetupConfigUri("http://testurl/HttpStatus400");
 
             Assert.Throws<HttpRequestException>(() => RestClient.Get(this.Road));
@@ -57,6 +57,7 @@ namespace RoadStatus.Unit.Tests
             this.Road = "A223";
             var expectedHttpStatus = "NotFound";
             var expectedHttpStatusCode = "404";
+
             SetupConfigUri("http://testurl/HttpStatus404");
 
             var roadStatus = GetRoadStatus<NotFoundError>();

@@ -4,6 +4,7 @@ using RoadStatus.REST;
 using RoadStatus.REST.HttpRestClient;
 using RoadStatus.REST.Interfaces;
 using System.Net.Http;
+using System.Text;
 using Xunit;
 
 namespace RoadStatus.Unit.Tests
@@ -23,6 +24,7 @@ namespace RoadStatus.Unit.Tests
             RestClientMock = new RestClient(ConfigMock.Object, new HttpClient(new DelegatingHandlerStub()));
 
             PrintMock = new Mock<IPrint>();
+            PrintMock.Object.Message = new System.Text.StringBuilder();
             Validator = new RoadStatusValidator(RestClientMock, PrintMock.Object);
         }
 

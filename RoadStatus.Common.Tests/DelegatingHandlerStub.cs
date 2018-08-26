@@ -13,8 +13,6 @@ namespace RoadStatus.Common.Tests
         {
             var response = new HttpResponseMessage(HttpStatusCode.OK);
 
-            response.Content = new StringContent("content");
-
             _handlerFunc = (request, cancellationToken) => 
             {
                 if (request.RequestUri.PathAndQuery.IndexOf("HttpStatus200") >= 0)

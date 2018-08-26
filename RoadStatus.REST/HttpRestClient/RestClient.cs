@@ -20,7 +20,6 @@ namespace RoadStatus.REST.HttpRestClient
 
         public string Get(string road)
         {
-
             string content = string.Empty;
 
             using (httpClient)
