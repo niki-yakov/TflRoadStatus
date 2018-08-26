@@ -19,19 +19,18 @@ Installing PowerShell please read and install from the link - https://docs.micro
 1. Install Visual Studio all default settings
 2. Clone the solution from Git
 3. Open the solution file RoadStatus.sln
-4. Build solution
-5. Install Powershell
-6. Create deploy folder in 'C:\'
-	a) Open PowerShell
-	b) execute 'pwd' and check if you are in c: drive
-	c) if c: drive is the current drive go to e)
-	d) execute 'c:'
-	e) execute 'cd \' and make 'C:' root current folder
-	f) execute 'md deploy'
+4. Install Powershell
+5. Create deploy folder in 'C:\'
+	1) Open PowerShell
+	2) execute 'pwd' and check if you are in c: drive
+	3) if c: drive is the current drive go to e)
+	4) execute 'c:'
+	5) execute 'cd \' and make 'C:' root current folder
+	6) execute 'md deploy'
 
 Updating app_id and app_key
 
-There are app.congig files int the below list of projects and both keys should be updatd.
+There are app.congig files int the below list of projects and both keys should be updated.
 ```
 Projects to update:
 RoadStatus.Behaviour.Tests
@@ -62,9 +61,9 @@ That command will run all the tests implemented in the project TDD/BDD
 
 1. Open PowerShell
 2. The 'deploy' folder is already created and from PowerShell prompt execute
-	a) execute 'c:'
-	b) execute 'cd \'
-	c) execute 'cd deploy'
+	1) execute 'c:'
+	2) execute 'cd \'
+	3) execute 'cd deploy'
 3.	Run 'RoadStatus A2' 
 
 ```
