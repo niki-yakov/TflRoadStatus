@@ -89,4 +89,4 @@ Additionally to remove dependencies between the projects I added separate app.co
 
 ## Authors
 
-* **Nikolay Yakov** - *Tfl Codding Challange* - [RoadStatusValidator](https://github.com/PurpleBooth)
+* **Nikolay Yakov** - *Tfl Codding Challange* - [RoadStatusValidator](https://github.com/niki-yakov/TflRoadStatus)
